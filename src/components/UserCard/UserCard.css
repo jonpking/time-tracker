@@ -1,0 +1,115 @@
+#userCard {
+  background-color: var(--neutral-dark-blue);
+  border-radius: 15px;
+  color: var(--neutral-pale-blue);
+  width: 250px;
+  height: 500px;
+}
+
+#userCardForeground {
+  background-color: var(--primary-blue);
+  border-radius: 15px;
+  height: 70%;
+}
+
+#userCardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 35px 0 0 30px;
+}
+
+#userCardContent img {
+  border: solid 3px #eee;
+  border-radius: 50%;
+  height: 75px;
+}
+
+#reportText {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 25px;
+}
+
+#reportText p {
+  margin-bottom: 5px;
+}
+
+#userName {
+  font-size: 40px;
+  font-weight: 300;
+  color: #eee;
+  margin-top: 0;
+}
+
+#userCardLinks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 10px 0;
+  padding-left: 30px;
+  color: var(--neutral-desaturated-blue);
+  height: 25%;
+}
+
+#userCardLinks a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#userCardLinks li:hover {
+  color: #eee;
+}
+
+#userCardLinks a:visited {
+  color: var(--neutral-pale-blue);
+}
+
+.selected {
+  color: #eee;
+}
+
+@media only screen and (max-width: 375px) {
+  #userCard {
+    height: 200px;
+    width: 100%;
+  }
+
+  #userCardContent {
+    flex-direction: row;
+  }
+
+  #userCardForeground {
+    height: 65%;
+  }
+
+  #userCardContent img {
+    height: 60px;
+  }
+
+  #reportText {
+    padding-top: 0;
+    padding-left: 18px;
+  }
+
+  #reportText p {
+    margin-top: 10px;
+  }
+
+  #userName {
+    font-size: 24px;
+  }
+
+  #userCardLinks {
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  #userCardLinks li {
+    margin: 0 25px;
+  }
+}

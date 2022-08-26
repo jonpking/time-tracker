@@ -1,0 +1,187 @@
+.infoCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eee;
+  width: 250px;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px 15px 25px 25px;
+}
+
+.backgroundImage {
+  height: 100%;
+  position: relative;
+}
+
+.workCardBackground {
+  background-color: var(--primary-light-red-work);
+}
+
+.workCardBackgroundImage {
+  background: no-repeat url(../../../public/images/icon-work.svg);
+  background-position: 90% -5%;
+  background-size: 75px;
+}
+
+.playCardBackground {
+  background-color: var(--primary-soft-blue);
+}
+
+.playCardBackgroundImage {
+  background: no-repeat url(../../../public/images/icon-play.svg);
+  background-position: 90% -1%;
+  background-size: 75px;
+}
+
+.studyCardBackground {
+  background-color: var(--primary-light-red-study);
+}
+
+.studyCardBackgroundImage {
+  background: no-repeat url(../../../public/images/icon-study.svg);
+  background-position: 90% -5%;
+  background-size: 80px;
+}
+
+.exerciseCardBackground {
+  background-color: var(--primary-lime-green);
+}
+
+.exerciseCardBackgroundImage {
+  background: no-repeat url(../../../public/images/icon-exercise.svg);
+  background-position: 90% top;
+  background-size: 80px;
+}
+
+.socialCardBackground {
+  background-color: var(--primary-violet);
+}
+
+.socialCardBackgroundImage {
+  background: no-repeat url(../../../public/images/icon-social.svg);
+  background-position: 93% 2%;
+  background-size: 75px;
+}
+
+.selfCareCardBackground {
+  background-color: var(--primary-soft-orange);
+}
+
+.selfCareCardBackgroundImage {
+  background: no-repeat url(../../../public/images/icon-self-care.svg);
+  background-position: 92% -5%;
+  background-size: 65px;
+}
+
+.infoCardForeground {
+  position: relative;
+  top: 20%;
+  border-radius: 15px;
+  background-color: var(--neutral-dark-blue);
+  height: 80%;
+}
+
+.infoCardForeground:hover {
+  background-color: hsl(237, 44%, 35%);
+  cursor: pointer;
+}
+
+.timeCardContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px 30px;
+}
+
+.timeCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.titleText {
+  text-transform: lowercase;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.titleText::first-letter {
+  text-transform: uppercase;
+}
+
+.timeTextDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 7px;
+  width: 100%;
+}
+
+.timeText {
+  font-size: 56px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.timeFrameText {
+  font-size: 14px;
+  margin-top: 4px;
+  color: var(--neutral-pale-blue);
+}
+
+.timeCardIcon {
+  height: 5px;
+  color: var(--neutral-pale-blue);
+}
+
+.timeCardIcon:hover {
+  filter: brightness(150%);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+  .infoCard {
+    height: 160px;
+    width: 100%;
+  }
+
+  .infoCardForeground {
+    top: 25%;
+    height: 75%;
+  }
+
+  .timeCardContent {
+    padding-top: 15px;
+  }
+
+  .timeCardHeader {
+    height: 40px;
+  }
+
+  .titleText {
+    margin-left: -8px;
+  }
+
+  .timeTextDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .timeText {
+    font-size: 32px;
+    margin-left: -8px;
+  }
+
+  .timeFrameText {
+    font-size: 15px;
+  }
+}

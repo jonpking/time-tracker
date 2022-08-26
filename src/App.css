@@ -1,0 +1,86 @@
+:root {
+  --primary-blue: hsl(246, 80%, 60%);
+  --primary-light-red-work: hsl(15, 100%, 70%);
+  --primary-soft-blue: hsl(195, 74%, 62%);
+  --primary-light-red-study: hsl(348, 100%, 68%);
+  --primary-lime-green: hsl(145, 58%, 55%);
+  --primary-violet: hsl(264, 64%, 52%);
+  --primary-soft-orange: hsl(43, 84%, 65%);
+  --neutral-very-dark-blue: hsl(226, 43%, 10%);
+  --neutral-dark-blue: hsl(235, 46%, 20%);
+  --neutral-desaturated-blue: hsl(235, 45%, 61%);
+  --neutral-pale-blue: hsl(236, 100%, 87%);
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: var(--neutral-very-dark-blue);
+  font-size: 18px;
+}
+
+#pageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#cardsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'userCard work play study'
+    'userCard exercise social selfCare';
+  gap: 30px;
+}
+
+#userCard {
+  grid-area: userCard;
+}
+
+#workCard {
+  grid-area: work;
+}
+
+#playCard {
+  grid-area: play;
+}
+
+#studyCard {
+  grid-area: study;
+}
+
+#exerciseCard {
+  grid-area: exercise;
+}
+
+#socialCard {
+  grid-area: social;
+}
+
+#selfCareCard {
+  grid-area: selfCare;
+}
+
+@media only screen and (max-width: 375px) {
+  #pageContainer {
+    align-items: initial;
+  }
+
+  #cardsContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'userCard'
+      'work'
+      'play'
+      'study'
+      'exercise'
+      'social'
+      'selfCare';
+    gap: 25px;
+    padding: 75px 15px;
+    width: 100vw;
+  }
+}
